@@ -6,7 +6,8 @@ import math
 
 # en init funktion containing all parameters for NCE
 
-def NCE(torch.nn.Module):
+def NCE( torch.nn.Module ):
+
     def __init__(self, c, ptilde, phi):
         super(NCE, self).__init__()
         self.c = c
@@ -20,4 +21,5 @@ def NCE(torch.nn.Module):
         return torch.logsumexp(ptilde + c) 
 
     def loss(self, phi, c, noise):
+        raise('implement loss function here')
         
